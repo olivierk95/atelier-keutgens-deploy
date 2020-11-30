@@ -1,0 +1,101 @@
+.h1, [class*="h1"] {
+    color: $color-black;
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+
+    @include mq(tablet) {
+        font-size: 48px;
+    }
+
+    @include mq(desktop) {
+        font-size: 64px;
+    }
+
+    &[class*="--white"] {
+        color: $color-white;
+    }
+}
+
+.h2, [class*="h2"] {
+    color: $color-black;
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.5;
+
+    @include mq(tablet) {
+        font-size: 32px;
+    }
+
+    @include mq(desktop) {
+        font-size: 36px;
+    }
+
+    &[class*="--white"] {
+        color: $color-white;
+    }
+}
+
+.text-normal, [class*='text-normal'] {
+    color: $color-black;
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        font-size: 15px;
+    }
+
+    &[class*='--white'] {
+        color: $color-white;
+    }
+}
+
+.text-small, [class*='text-small'] {
+    color: $color-black;
+    font-family: $font-text;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    @include mq(tablet) {
+        font-size: 11px;
+    }
+
+    @include mq(desktop) {
+        font-size: 12px;
+    }
+
+    &[class*='--white'] {
+        color: $color-white;
+    }
+}
+
+.text-important, [class*='text-important'] {
+    color: $color-black;
+    font-family: $font-text;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    @include mq(tablet) {
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        font-size: 17px;
+    }
+
+    &[class*='--white'] {
+        color: $color-white;
+    }
+}

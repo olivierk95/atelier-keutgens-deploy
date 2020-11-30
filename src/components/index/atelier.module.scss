@@ -1,0 +1,63 @@
+@import "../../styles/utils/variables";
+@import "../../styles/vendors/mq";
+
+.hero {
+    width: 100vw;
+    padding-top: 50px;
+}
+
+.heroContainer {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: $border--white;
+    border-left: $border--white;
+    border-right: $border--white;
+}
+
+.logoContainer {
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-color: $color-primary;
+    margin-right: $spacing-s;
+}
+
+.heroHeadlines {
+    margin: 0 $spacing-m $spacing-m;
+}
+
+.arrow {
+    position: relative;
+    bottom: -25px;
+
+    svg {
+        height: 50px;
+        width: 50px;
+    }
+}
+.atelierContainer {
+    border-bottom: $border;
+    border-left: $border;
+    border-right: $border;
+    padding: $spacing-vh-l 0;
+}
+
+.atelierDesc {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 $spacing-m;
+}
+
+.atelierHeadlines {
+    margin-bottom: $spacing-l;
+}
+

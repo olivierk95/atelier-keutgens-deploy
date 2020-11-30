@@ -1,0 +1,20 @@
+body {
+    background-color: $color-white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    @include mq(desktop) {
+        width: 80%;
+    }
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.centered, [class*="--centered"] {
+    text-align: center;
+}

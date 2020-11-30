@@ -1,0 +1,134 @@
+@import "../styles/utils/variables";
+@import "../styles/vendors/mq";
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $color-white;
+    display: grid;
+
+    @include mq(desktop) {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+.projet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include mq(desktop) {
+        height: 100%;
+    }
+}
+
+.uiNavContainer {
+    @include mq(desktop) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.uiNav {
+    @include mq(desktop) {
+        position: sticky;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.title {
+    margin: $spacing-vh-l 0 $spacing-vh-m;
+    max-width: 500px;
+    text-align: center;
+
+    @include mq(desktop) {
+        margin: $spacing-vh-m 0 $spacing-vh-s;
+    }
+}
+
+.nav {
+    position: relative;
+    background-color: $color-primary-darker;
+}
+
+.navContainer {
+    width: 90%;
+    margin: $spacing-vh-m auto;
+
+    @include mq(desktop) {
+        width: 100%;
+        margin: $spacing-vh-s auto;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.navTitle {
+    margin: 0 0 $spacing-vh-xs;
+    text-align: center;
+
+    @include mq(desktop) {
+        margin: 0 $spacing-m $spacing-vh-xs;
+        text-align: left;
+    }
+}
+
+.navItems {
+    
+}
+
+.navLink {
+    display: flex;
+    position: relative;
+    margin-bottom: $spacing-s;
+    transition: $transition-ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+
+        .navLinkTitle {
+            color: $color-black;
+        }
+    
+        .circle {
+            fill: $color-black;
+        }
+    }
+}
+
+.navLinkActive {
+    .navLinkTitle {
+        color: $color-primary-lighter;
+    }
+
+    .circle {
+        fill: $color-primary-lighter;
+    }
+}
+
+.circle {
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    fill: $color-white-darker;
+    transition: $transition-ease-in;
+}
+
+.navLinkTitle {
+    margin-left: $spacing-m;
+    transition: $transition-ease-in;
+
+    @include mq(desktop) {
+        margin: 0 $spacing-m;
+    }
+}

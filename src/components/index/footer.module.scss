@@ -1,0 +1,13 @@
+@import "../../styles/utils/variables";
+
+.container {
+    background-color: $color-black;
+    border-left: $border;
+    border-right: $border;
+
+    p {
+        text-align: center;
+        margin: 0 auto;
+        padding: $spacing-xs $spacing-m;
+    }
+}

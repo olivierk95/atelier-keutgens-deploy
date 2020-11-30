@@ -1,0 +1,46 @@
+@import "../../styles/utils/variables";
+@import "../../styles/vendors/mq";
+
+.container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+
+    @include mq(desktop) {
+        position: relative;
+    }
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: $color-black;
+    padding: 0 $spacing-m $spacing-m;
+    cursor: pointer;
+
+    &:hover {
+
+        .arrow {
+            transform: scale(2);
+        }
+    }
+}
+
+.button {
+    border-radius: 50%;
+    border: $border;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: $color-white;
+}
+
+.arrow {
+    font-family: $font-title;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    color: $color-black;
+    transition: $transition-ease-in;
+}

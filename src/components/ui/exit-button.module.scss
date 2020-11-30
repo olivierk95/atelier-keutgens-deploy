@@ -1,0 +1,58 @@
+@import "../../styles/utils/variables";
+@import "../../styles/vendors/mq";
+
+
+.exit {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    text-decoration: none;
+    padding: $spacing-m;
+    color: $color-black;
+    transition: $transition-ease-in;
+    cursor: pointer;
+
+    @include mq(desktop) {
+        position: relative;
+    }
+
+    &:hover {
+
+        .exitCross {
+            transform: scale(2);
+        }
+    }
+}
+
+.exitButton {
+    border: $border;
+    border-radius: 50%;
+    background-color: $color-white;
+    width: 40px;
+    height: 40px;
+    margin-bottom: $spacing-xs;
+    transition: $transition-ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.exitCross{
+    font-family: $font-title;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    color: $color-black;
+    transition: $transition-ease-in;
+}
+
+.exitDesc {
+    font-family: $font-text;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
