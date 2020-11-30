@@ -12,7 +12,7 @@ module.exports = {
     author: 'Olivier Keutgens',
     description: "",
     image: '/src/assets/photo-profil.jpg',
-    url: 'https://atelierkeutgens.be'
+    url: 'https://atelier-keutgens.be'
   },
   plugins: [
     'gatsby-plugin-sass',
