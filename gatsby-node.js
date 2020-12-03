@@ -68,3 +68,16 @@ exports.onCreateNode = async ({
         }
     }
 }
+
+//Enables empty fields to be acceptable at the build
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions
+    const typeDefs = `
+        type StrapiContact implements Node {
+            description_michel: String
+            description_sabina : String
+            invitation: String
+        }
+    `
+    createTypes(typeDefs)
+}
