@@ -56,6 +56,10 @@
     &[class*='--white'] {
         color: $color-white;
     }
+
+    &[class*='--black'] {
+        font-weight: 800;
+    }
 }
 
 .text-small, [class*='text-small'] {
