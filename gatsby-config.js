@@ -30,6 +30,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.API_URL,
+        queryLimit: 5000,
         contentTypes: [ `projets` ],
         singleTypes: [ `atelier`, `contact` ]
       },
