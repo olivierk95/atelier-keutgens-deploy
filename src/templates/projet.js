@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
+import SEO from '../components/seo'
 
 import ExitButton from "../components/ui/exit-button"
 import NavButtons from "../components/ui/nav-buttons"
@@ -15,6 +16,7 @@ const Projet = ({ data }) => {
 
     return (
         <div className={projetStyles.body}>
+            <SEO title={data.projet.titre} image={`${data.site.siteMetadata.url}${data.projet.carousel[0].url}`} url={`${data.site.siteMetadata.url}/${slugify(data.projet.titre)}`}/> 
             <section className={projetStyles.projet}>
               <div className={projetStyles.uiNavContainer}>
                 <div className={projetStyles.uiNav}>
@@ -58,6 +60,7 @@ export const query = graphql`
       id
       titre
       carousel {
+        id
         alternativeText
         caption
         localFile {
@@ -67,12 +70,18 @@ export const query = graphql`
             }
           }
         }
+        url
       }
     }
     nav: allStrapiProjets(sort: {fields: created_at, order: DESC}) {
       nodes {
         id
         titre
+      }
+    }
+    site {
+      siteMetadata {
+          url
       }
     }
 }`

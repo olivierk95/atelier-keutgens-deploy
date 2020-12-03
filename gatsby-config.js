@@ -11,7 +11,7 @@ module.exports = {
     title: "Atelier d'Architecture Keutgens",
     author: 'Olivier Keutgens',
     description: "",
-    image: '/src/assets/photo-profil.jpg',
+    image: '/src/assets/hero-background-image.jpg',
     url: 'https://atelier-keutgens.be'
   },
   plugins: [

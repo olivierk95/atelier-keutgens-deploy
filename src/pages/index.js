@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import SEO from '../components/seo'
 
 import Atelier from '../components/index/atelier'
 import Galerie from '../components/index/galerie'
@@ -12,6 +13,7 @@ import indexStyles from "./index.module.scss"
 const Accueil = ({data}) => {
   return (
     <div className={indexStyles.container}>
+      <SEO title="Accueil" />
       <Atelier 
         backgroundImage={data.background.childImageSharp.fluid}
         heroTitle={data.atelier.titre_couverture}

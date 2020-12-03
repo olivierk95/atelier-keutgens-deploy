@@ -7,7 +7,6 @@ import galerieStyles from "./galerie.module.scss"
 const slugify = require('slugify')
 
 const Galerie = (props) => {
-    console.log(props)
     return(
         <section className="container">
             <div className={galerieStyles.container}>
