@@ -1,6 +1,8 @@
 import React from 'react'
 import BackgroundImage from "gatsby-background-image"
 import ArrowBottom from "../../assets/arrow-bottom.svg"
+import ReactMarkdown from 'react-markdown'
+
 
 import atelierStyles from "./atelier.module.scss"
 
@@ -25,7 +27,7 @@ const Atelier = (props) => {
             <div className={`container ${atelierStyles.atelierContainer}`}>
                 <div className={atelierStyles.atelierDesc}>
                     <p className={`h1--centered ${atelierStyles.atelierHeadlines}`}>{props.atelierTitle}</p>
-                    <p className="text-normal--centered">{props.atelierDesc}</p>
+                    <ReactMarkdown className="text-normal--centered" children={props.atelierDesc}/>
                 </div>
             </div>
         </section>
