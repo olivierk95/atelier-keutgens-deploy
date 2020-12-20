@@ -14,7 +14,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0 0 $spacing-vh-l;
+    margin: 0 0 $spacing-vh-m;
+
+    @include mq(desktop) {
+        margin: 0 0 $spacing-vh-l;
+    }
 }
 
 .image {
