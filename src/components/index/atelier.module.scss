@@ -52,12 +52,17 @@
 }
 
 .atelierDesc {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 $spacing-m;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 $spacing-m;
 }
 
 .atelierHeadlines {
     margin-bottom: $spacing-l;
 }
 
+.description {
+    @include mq(tablet) {
+        text-align: center;
+    }
+}

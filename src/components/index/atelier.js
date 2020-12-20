@@ -28,7 +28,7 @@ const Atelier = (props) => {
             <div className={`container ${atelierStyles.atelierContainer}`}>
                 <div className={atelierStyles.atelierDesc}>
                     <p className={`h1--centered ${atelierStyles.atelierHeadlines}`}>{props.atelierTitle}</p>
-                    <ReactMarkdown className="text-normal--centered" children={props.atelierDesc}/>
+                    <ReactMarkdown className={`text-normal ${atelierStyles.description}`} children={props.atelierDesc}/>
                 </div>
             </div>
         </section>

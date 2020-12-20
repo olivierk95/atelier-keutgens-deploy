@@ -2,11 +2,11 @@
     color: $color-black;
     font-family: $font-title;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.5;
 
     @include mq(tablet) {
-        font-size: 48px;
+        font-size: 44px;
     }
 
     @include mq(desktop) {
@@ -22,11 +22,11 @@
     color: $color-black;
     font-family: $font-title;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.5;
 
     @include mq(tablet) {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     @include mq(desktop) {
@@ -42,15 +42,15 @@
     color: $color-black;
     font-family: $font-text;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
 
     @include mq(tablet) {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     @include mq(desktop) {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     &[class*='--white'] {
@@ -66,16 +66,16 @@
     color: $color-black;
     font-family: $font-text;
     font-weight: 200;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 1px;
 
     @include mq(tablet) {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     @include mq(desktop) {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     &[class*='--white'] {
@@ -87,7 +87,7 @@
     color: $color-black;
     font-family: $font-text;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 1px;
 
