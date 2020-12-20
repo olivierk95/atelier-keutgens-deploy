@@ -44,6 +44,18 @@ module.exports = {
       }
     },
     {
+      resolve:`gatsby-plugin-manifest`,
+      options: {
+        name: `Atelier d'Architecture Keutgens`,
+        short_name: `Atelier Keutgens`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#FFFFFF`,
+        display: `standalone`,
+        icon: `src/assets/logo-atelier-navigateur.svg`,
+      }
+    },
+    {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {

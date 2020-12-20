@@ -1,6 +1,7 @@
 import React from 'react'
 import BackgroundImage from "gatsby-background-image"
 import ArrowBottom from "../../assets/arrow-bottom.svg"
+import Logo from "../../assets/logo-atelier-keutgens.svg"
 import ReactMarkdown from 'react-markdown'
 
 
@@ -12,7 +13,7 @@ const Atelier = (props) => {
             <BackgroundImage Tag="div" fluid={props.backgroundImage} className={atelierStyles.hero}>
                 <div className={`container ${atelierStyles.heroContainer}`}>
                     <div className={atelierStyles.logoContainer}>
-                        <div className={atelierStyles.logo}>Logo</div>
+                        <Logo className={atelierStyles.logo}/>
                         <h1 className="text-important">Atelier d'<br/>Architecture<br/>Keutgens</h1>
                     </div>
                     <div>
