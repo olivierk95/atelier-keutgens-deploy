@@ -3,7 +3,6 @@
 
 .hero {
     width: 100%;
-    padding-top: 50px;
     position:relative;
 
 }
@@ -11,26 +10,19 @@
 .heroContainer {
     position: relative;
     z-index: 10;
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    border-top: $border--white;
-    border-left: $border--white;
-    border-right: $border--white;
+
 }
 
 .logoContainer {
     position: relative;
-    top: -30px;
     display: flex;
     align-items: center;
     z-index: 10;
-
-    @include mq(desktop) {
-        top: -40px;
-    }
 }
 
 .logo {
@@ -66,14 +58,15 @@
     background-color: rgba($color-white, 0.7);
 }
 
-.heroHeadlinesContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: $spacing-xl $spacing-m $spacing-l;
+.headerContainer {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: $border--white;
+    border-left: $border--white;
+    border-right: $border--white;
+    padding: $spacing-m 0 $spacing-l;
 }
 
 .heroCtaContainer {
@@ -82,10 +75,14 @@
     left: 0;
     right: 0;
     padding: $spacing-m $spacing-m $spacing-xl;
+    border-top: $border--white;
+    border-left: $border--white;
+    border-right: $border--white;
 }
 
 .heroHeadlines {
     max-width: 800px;
+    padding: $spacing-vh-s $spacing-s 0;
 }
 
 .arrow {
