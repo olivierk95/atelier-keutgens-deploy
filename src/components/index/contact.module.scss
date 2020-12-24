@@ -51,6 +51,7 @@
 
 .title {
     margin-bottom: $spacing-m;
+    margin-top: $spacing-m;
 }
 
 .hero {
@@ -62,6 +63,12 @@
 .logoContainer {
     position: absolute;
     bottom: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logoMainContainer {
     width: 100%;
     display: flex;
     justify-content: center;

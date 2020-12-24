@@ -14,11 +14,13 @@ const Atelier = (props) => {
                 <div className={`container ${atelierStyles.heroContainer}`}>
                     <div className={atelierStyles.logoContainer}>
                         <Logo className={atelierStyles.logo}/>
-                        <h1 className="text-important">Atelier d'<br/>Architecture<br/>Keutgens</h1>
+                        <h1 className={atelierStyles.title}>Atelier d'<br/>Architecture<br/>Keutgens</h1>
                     </div>
-                    <div>
+                    <div className={`${atelierStyles.background} ${atelierStyles.heroHeadlinesContainer}`}>
                         <p className={`h2--centered ${atelierStyles.heroHeadlines}`}>{props.heroTitle}</p>
-                        <p className="text-important--centered">Travaillons <span className="underlined">ensemble</span>.</p>
+                    </div>
+                    <div className={`${atelierStyles.background} ${atelierStyles.heroCtaContainer}`}>
+                        <p className={`text-important--centered`}>Travaillons <span className="underlined">ensemble</span>.</p>
                     </div>
                     <div className={atelierStyles.arrow}>
                         <ArrowBottom />

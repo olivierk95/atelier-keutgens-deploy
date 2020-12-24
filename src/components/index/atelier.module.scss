@@ -4,13 +4,17 @@
 .hero {
     width: 100%;
     padding-top: 50px;
+    position:relative;
+
 }
 
 .heroContainer {
+    position: relative;
+    z-index: 10;
     min-height: 90vh;
     display: flex;
+    position: relative;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-top: $border--white;
     border-left: $border--white;
@@ -19,30 +23,84 @@
 
 .logoContainer {
     position: relative;
-    top: -40px;
+    top: -30px;
     display: flex;
     align-items: center;
+    z-index: 10;
+
+    @include mq(desktop) {
+        top: -40px;
+    }
 }
 
 .logo {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     margin-right: $spacing-s;
+
+    @include mq(desktop) {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+.title {
+    color: $color-black;
+    font-family: $font-text;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    @include mq(tablet) {
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        font-size: 17px;
+    }
+}
+
+.background {
+    background-color: rgba($color-white, 0.7);
+}
+
+.heroHeadlinesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: $spacing-xl $spacing-m $spacing-l;
+    display: flex;
+    justify-content: center;
+}
+
+.heroCtaContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $spacing-m $spacing-m $spacing-xl;
 }
 
 .heroHeadlines {
     max-width: 800px;
-    margin: 0 $spacing-m $spacing-m;
 }
 
 .arrow {
-    position: relative;
-    bottom: -25px;
+    position: absolute;
+    animation: godown 3s ease-in-out infinite alternate;
 
     svg {
         height: 50px;
         width: 50px;
     }
+}
+
+@keyframes godown {
+    from {bottom: 0;}
+    to {bottom: -25px;}
 }
 .atelierContainer {
     border-bottom: $border;

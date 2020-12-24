@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import contactStyles from "./contact.module.scss"
+import Logo from "../../assets/logo-atelier-keutgens.svg"
 import LogoMichel from "../../assets/logo-michel.svg"
 import LogoSabina from "../../assets/logo-sabina.svg"
 import ReactMarkdown from 'react-markdown'
@@ -10,6 +11,9 @@ const Contact = (props) => {
         <section className="container">
             <div className={contactStyles.container}>
                 <div className={contactStyles.contact}>
+                    <div className={contactStyles.logoMainContainer}>
+                        <Logo className={contactStyles.logo}/>
+                    </div>
                     <h2 className={`h1 ${contactStyles.title}`}>Contact</h2>
                     <div className={contactStyles.info}>
                         <ReactMarkdown className={`text-normal ${contactStyles.infoDesc}`} children={props.invitation}/>
